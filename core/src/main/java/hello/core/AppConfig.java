@@ -20,11 +20,11 @@ public class AppConfig {
     //IoC(Inversion of Control) ==> 프로그램을의 제어흐름을 직접제어하는것이 아니라 외부에서 관리하는 것.(App Config가 하는것마냥)
     //@Bean(name="") 이있는데 Spring 객체 찾을때 .getBean("name")에서 호출하는 이름을 바꿀수있다.단 잘쓰지말자..[관례]
     @Bean
-    public static MemberService memberService(){
+    public MemberService memberService(){
         return new MemberServiceImpl(memberRepository());
     }
     @Bean
-    public static MemberRepository memberRepository() {
+    public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
     @Bean
