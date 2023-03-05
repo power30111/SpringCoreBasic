@@ -1,8 +1,10 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Component
 public class MemoryMemberRepository implements MemberRepository{
     //MemberRepository(인터페이스)를 통해서 실제로 동작할 구현체
     //구현체는 메서드는 죄다 @Override , 만드는 변수도 static
