@@ -2,7 +2,9 @@ package hello.core.discount;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FIxDiscountPolicy implements DiscountPolicy{
     //DiscountPolicy가 고정된 할인 정책일 경우의 구현체
     private int discountFixAmount = 1000;   //고정된 할인금액
