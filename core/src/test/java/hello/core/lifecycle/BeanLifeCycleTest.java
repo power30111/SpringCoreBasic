@@ -20,7 +20,7 @@ public class BeanLifeCycleTest {
     }
     @Configuration
     static class LifeCycleConfig{
-        @Bean
+        @Bean()
         public NetworkClient networkClient(){
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spirng.dev");

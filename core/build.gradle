@@ -22,10 +22,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	//javax not found 에러 해결을위한것
-	implementation 'com.google.code.findbugs:jsr305:3.0.2'
 	//lombok 설정추가
 	compileOnly 'org.projectlombok:lombok'
+	implementation 'com.google.code.findbugs:jsr305:3.0.2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
